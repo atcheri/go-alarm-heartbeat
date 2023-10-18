@@ -1,0 +1,12 @@
+project_name: github.com/atcheri/go-alarm-heartbeat
+builds:
+  - id: go-alarm-heartbeat-http
+    main: ./cmd/http/main.go
+    env:
+    goos:
+      - linux
+      - windows
+      - darwin
+    goarch:
+      - amd64
+      - arm64
